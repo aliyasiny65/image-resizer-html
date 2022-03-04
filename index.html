@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Crypon Image Resizer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://cdn.crypon.xyz/images/favicon.png">
+    <!--Google Fonts-->
+    <link href="gfonts.css" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="https://cdn.crypon.xyz/public.css">
+    <meta property="og:description" content="Crypon Website" /> 
+    <meta property="og:image" content="https://cdn.crypon.xyz/images/favicon.png" />
+    <meta property="og:site_name" content="Crypon" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html.js/0.12.1/HTML.min.js" integrity="sha512-dwlJiL/dLQp8ndnRL5vOGnuB3HZon7fKz+h0Miic8+wMi6WxlgNoiyqO1xlr8y1dz67bGEkBm2pbPMgU6M8Wtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<link rel="stylesheet" href="imgresize.css" />
+<link rel="stylesheet" href="public.css" />
+<link rel="stylesheet" href="bootstrap.css" />
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="toggle">
+    </div>
+  <div class="resizer">
+  <input type="file" class="resizer__file">
+  <div class="dimensions">
+    <input type="text" class="resizer__input resizer__input--width" value="0">
+    x
+    <input type="text" class="resizer__input resizer__input--height" value="0">
+    <label>
+      <input type="checkbox" class="resizer__aspect" checked>
+      En Boy Oran覺n覺 Koru
+    </label>
+  </div>
+  <canvas class="resizer__canvas" width="500" height="500"></canvas>
+</div>
+    <script src="imgresize.js"></script>
+    <script src="public.js"></script>
+</body>
+</html>
